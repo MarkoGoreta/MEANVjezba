@@ -1,0 +1,6 @@
+.panel.panel-primary
+    .panel-heading.text-center AAAAAAAA
+    .panel-body
+        .row(ng-repeat="datas in nekiData | orderBy:'published':true | limitTo:10")
+            .col-md-3 {{datas.published | date:'MMM d'}}
+            .col-md-9 {{datas.name}}

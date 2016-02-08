@@ -1,0 +1,5 @@
+.panel.panel-primary
+    .panel-heading.text-center Neka sranja
+    .panel-body
+        .row(ng-repeat="datas in nekiData | filter:(featured.true) | limitTo:10")
+            .col-md-12 {{ datas.name }}
